@@ -77,16 +77,37 @@ ul,ol{
     transition: all 0.3s ease-in-out;
 }
 
-
-@media (max-width:768px) {
-    .card{
-        margin: 20px auto;
-        
+@media (max-width:780px){
+    .header-content-man{
+        display: none ;
     }
-} 
 
-@media (max-width:576){
-    .phone-none{
+    .header-content-main{
+        text-align: center;
+        margin: 0 auto;
+    }
+
+    br{
         display: none;
     }
 }
+
+@media (max-width:1199px) {
+    .card{
+        margin: 20px auto;
+    }
+
+    .phone-none{
+        display: none !important;
+    }
+
+    .header-content{
+        margin-bottom: 150px;
+        margin-top: 150px;
+    }
+
+    .tech{
+        margin-bottom: 80px;
+    }
+
+} 
