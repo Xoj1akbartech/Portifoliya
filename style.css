@@ -8,8 +8,23 @@ ul,ol{
     list-style: none;
 }
 
+.navbar{
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 10;
+    box-shadow: 2px 2px 100px 0px rgba(0, 0, 0, 0.2);
+}
+
 .nav-link{
     margin-right: 50px;
+    transition: 0.5s;
+}
+
+.nav-link:hover{
+    color: #8b74d4;
+    font-weight: 500;
+    margin-right: 49px;
 }
 
 .nav-icon{
@@ -33,7 +48,8 @@ ul,ol{
 
 .tech-icons{
     width: 60%;
-    transition: 1s;
+    transition:all 0.5s;
+    margin-bottom: 80px;
 }
 
 .all-text{
@@ -46,12 +62,6 @@ ul,ol{
     color: #2f215c;
 }
 
-.tech-icons:hover{
-    position: absolute;
-    width: 60%;
-    box-shadow: 2px 2px 100px 0px rgba(0, 0, 0, 0.2);
-}
-
 .tech{
     margin-bottom: 200px;
 }
@@ -59,3 +69,18 @@ ul,ol{
 .tech-icons-box .col-6{
     position: relative;
 }
+
+.card{
+    box-shadow: 2px 2px 100px 0px rgba(0, 0, 0, 0.2);
+    margin-bottom: 60px;
+    border: none;
+    transition: all 0.3s ease-in-out;
+}
+
+
+@media (max-width:768px) {
+
+    .card{
+        margin: 20px auto;
+    }
+} 
