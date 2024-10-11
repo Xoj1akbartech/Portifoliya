@@ -79,8 +79,14 @@ ul,ol{
 
 
 @media (max-width:768px) {
-
     .card{
         margin: 20px auto;
+        
     }
 } 
+
+@media (max-width:576){
+    .phone-none{
+        display: none;
+    }
+}
