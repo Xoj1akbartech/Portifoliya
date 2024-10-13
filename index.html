@@ -9,6 +9,7 @@
 </head>
 <body>
     <header>
+      <br id="home">
         <nav class="navbar navbar-expand-lg bg-body-tertiary">
             <div class="container">
               <a class="navbar-brand h2" href="#">{Hojiakbar}</a>
@@ -18,19 +19,19 @@
               <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
                   <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    <a class="nav-link active" aria-current="page" href="#home">Home</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="#">About</a>
+                    <a class="nav-link" href="#about">About</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="#">Tech Stack</a>
+                    <a class="nav-link" href="#tech">Tech Stack</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="#">Projects</a>
+                    <a class="nav-link" href="#project">Projects</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="#">Contact</a>
+                    <a class="nav-link" href="#contact">Contact</a>
                   </li>
                   <li class="nav-item nav-icon">
                     <img src="./img/header/github.png" alt="">
@@ -46,14 +47,14 @@
             </div>
           </nav>
 
-
+          <br id="about">
           <div class="header-content">
             <div class=" d-flex justify-content-between align-items-center container">
-              <h1 class="lh-base fw-bold header-content-main">HI 👋<br> My name is <br> Hojiakbar <br> I build things for Web</h1>
+              <h1  class="lh-base fw-bold header-content-main">HI 👋<br> My name is <br> Hojiakbar <br> I build things for Web</h1>
               <span class="header-content-man rounded-circle"></span>
             </div>
+            <br id="tech">
           </div>
-
     </header>
 
     <!-- TECH STACK -->
@@ -76,7 +77,9 @@
           <div class="col-lg-3 col-xl-2 col-6 col-md-4 mb-4"><img class="tech-icons" src="./img/tech/github.png" alt=""></div>
         </div>
       </div>
+      <br id="project">
      </section>
+     
 
     
      <!-- PROJECTS -->
@@ -84,7 +87,7 @@
         <div class="container text-center">
           <h1 class="all-title fw-bold">Projects</h1>
           <p class="all-text fs-3">Things I’ve built so far</p>
-        <div class="row text-start">
+        <div class="row text-start" style="margin: 0 auto;">
           <!--  -->
           <div class="col-md-6 col-xl-4 col-sm-12">   
             <div class="card" style="width: 20rem;">
@@ -125,7 +128,7 @@
             </div>
           </div>
           <!--  -->
-          <div class="col-md-6 col-xl-4 col-sm-12">
+          <div class="col-md-6 col-xl-4 phone-none col-sm-12">
             <div class="card" style="width: 20rem;">
               <span class="bd-placeholder-img card-img-top" style="width: 100%; height: 220px; background: linear-gradient(90deg, #13B0F5 -2.06%, #E70FAA 100%);"></span>
               <div class="card-body">
@@ -138,7 +141,7 @@
             </div>
           </div>
           <!--  -->
-          <div class="col-md-6 col-xl-4 col-sm-12">
+          <div class="col-md-6 col-xl-4 phone-none col-sm-12">
             <div class="card" style="width: 20rem;">
               <span class="bd-placeholder-img card-img-top" style="width: 100%; height: 220px; background: linear-gradient(90deg, #13B0F5 -2.06%, #E70FAA 100%);"></span>
               <div class="card-body">
@@ -151,7 +154,7 @@
             </div>
           </div>
           <!--  -->
-          <div class="col-md-6 col-xl-4 col-sm-12">
+          <div class="col-md-6 col-xl-4 phone-none col-sm-12">
             <div class="card" style="width: 20rem;">
               <span class="bd-placeholder-img card-img-top" style="width: 100%; height: 220px; background: linear-gradient(90deg, #13B0F5 -2.06%, #E70FAA 100%);"></span>
               <div class="card-body">
@@ -167,7 +170,29 @@
       </div>
       </section>
 
-      <footer></footer>
+      <footer id="contact">
+        <div class="container">
+          <div class="row">
+            <div class="col-8 col-md-6"><h1>{Hojiakbar}</h1></div>
+            <div class="col-2 col-md-3 col-sm-7 col-6 justify-content-center d-flex align-items-center"><p>+998 93 414 01 76</p></div>
+            <div class="col-2 col-md-3 col-sm-5 col-6 justify-content-center d-flex align-items-start"> 
+              <img src="./img/header/github.png" alt="">
+              <img class="ms-4" src="./img/header/twitter.png" alt="">
+              <img class="ms-4" src="./img/header/in.png" alt=""></div>
+            </div>
+            <br>
+            <hr>
+            <br>
+            <div class="row d-flex justify-content-aroundly text-center">
+              <div class="col-2 fs-6"><a class="footer-link" href="#home">Home</a></div>
+              <div class="col-2 fs-6"><a class="footer-link" href="#about">About</a></div>
+              <div class="col-3 fs-6"><a class="footer-link" href="#tech">Technologies</a></div>
+              <div class="col-2 fs-6"><a class="footer-link" href="#project">Projects</a></div>
+              <div class="col-2 fs-6"><a class="footer-link active" href="#contact">Contact</a></div>
+            </div>
+          </div>
+        </div>
+      </footer>
 
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
