@@ -30,7 +30,7 @@ ul,ol{
 .header-content-man{
     width: 350px;
     height: 350px;
-    background: linear-gradient(90deg, #13B0F5 -0.08%, #CA24B4 63.6%);
+    position: relative;
 }
 
 .header-content-main{
@@ -94,18 +94,13 @@ footer{
         margin: 0 auto;
     }
 
-    br{
+    .phone-none, footer h1, footer br, .md-none-footer, .footer-link{
         display: none;
     }
 
-    .phone-none{
-        display: none;
+    .tech-icons{
+        width: 50%;
     }
-
-    footer h1{
-        display: none;
-    }
-
 }
 
 @media (max-width:1199px) {
@@ -127,3 +122,37 @@ footer{
     }
 
 } 
+
+.tech-icons:hover{animation: pulsing 1s ;}
+@keyframes pulsing{
+    0%{transform: translateY(0);}
+    40%{transform: translateY(-30px);}
+    60%{transform: translateY(2px);}
+    70%{transform: translateY(-4px);}
+    80%{transform: translateY(0);}
+}
+
+.main-img{
+    width: 350px;
+    height: 350px;
+    background: rgb(83, 60, 165);
+    position: relative;
+}
+
+.main-img::after, .main-img::before{
+    content: "";
+    position: absolute;
+    width: 360px;
+    height: 360px;
+    z-index: -1;
+    box-sizing: content-box;
+    bottom: -1.4%;
+    left: -1.4%;
+    background-image: conic-gradient( #ca24b4 , #13b0f5 , #ca24b4);
+    border-radius: 50%;
+}
+
+.main-img::before{
+    filter: blur(4rem);
+    opacity: 0.5;
+}
